@@ -1,0 +1,64 @@
+body {
+  background-color: #1a4e7d;
+  color: #c0c7d6;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Стилове за sticky header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #1a4e7d;
+  padding: 10px;
+}
+
+
+/* Стилове за позициониране на котвите */
+section::before {
+  content: "";
+  display: block;
+  height: 50px; /* Променете височината според височината на sticky header */
+  margin: -50px 0 0; /* Обратен отместващ маргин за компенсиране */
+  visibility: hidden; /* Скриваме празния блок */
+}
+
+
+
+
+
+/* Стилове за анимацията на превъртането */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Стилове за хоризонтално разположение на бутоните */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+  background-color: #1a4e7d; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  color: #ccc;
+}
+
+nav a:hover {
+  background-color: #f1f1f1; 
+  color: #1a4e7d;
+}
+
+
