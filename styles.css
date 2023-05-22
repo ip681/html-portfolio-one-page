@@ -18,7 +18,7 @@ header {
 section::before {
   content: "";
   display: block;
-  height: 50px; /* Променете височината според височината на sticky header */
+  height: 50px; /* Променете височината според височината на sticky header ПО ПОДРАЗНИРАНЕ 50*/  
   margin: -50px 0 0; /* Обратен отместващ маргин за компенсиране */
   visibility: hidden; /* Скриваме празния блок */
 }
@@ -61,4 +61,16 @@ nav a:hover {
   color: #1a4e7d;
 }
 
-
+section{
+  min-height: 800px;
+  border: #ccc;
+  border-color: #ccc;
+  border-bottom: #ccc;
+  /* padding-top: 50px;  */
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px; */
+  margin-bottom: 20px;
+  /* border: dashed rgb(117, 117, 117);
+  border-radius: 50px;  */
+}
